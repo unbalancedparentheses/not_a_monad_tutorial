@@ -2,7 +2,7 @@
 
 Dec 8, 2014
 
-We interviewed [Timothy Baldridge(https://twitter.com/timbaldridge)], creator of [Pixie](https://github.com/pixie-lang/pixie), a small fast, native lisp with _magical_ powers. We hope you try it out!
+We interviewed [Timothy Baldridge](https://twitter.com/timbaldridge), creator of [Pixie](https://github.com/pixie-lang/pixie), a small fast, native lisp with _magical_ powers. We hope you try it out!
 ![](https://cdn-images-1.medium.com/max/800/1*jYqNf1VQpmxhv7WwkPm1Ag.jpeg)
 `“In modern use, Pixie can be synonymous with fairies or sprites”`
 
