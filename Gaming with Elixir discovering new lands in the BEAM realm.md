@@ -1,4 +1,4 @@
-#Gaming with Elixir: discovering new lands in the BEAM realm
+# Gaming with Elixir: discovering new lands in the BEAM realm
 Apr 20, 2017
 
 In this opportunity I interviewed somebody I don’t normally interview: a client, [Chris Jimison](https://www.linkedin.com/in/chrisjimison/), CTO of Merigo. One of my clients. After working for almost a year with Merigo, I appreciate and understand the differences between using a BEAM language to develop a typical REST JSON system and using it to develop a videogame backend. I am not aware of many companies using Elixir to develop backends. I have only watch a talk by Jamie Winsor called [“Building And Releasing A Massively Multiplayer Online Game”](https://youtu.be/_i6n-eWiVn4). I hope to be able to interview Jamie in the following weeks.
