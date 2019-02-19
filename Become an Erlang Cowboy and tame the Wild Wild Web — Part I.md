@@ -62,7 +62,8 @@ Erlang seems to be the ugly duckling compared to other programming languages sin
 ![](https://cdn-images-1.medium.com/max/716/1*qV-Mz3gUxyM1Ug0XANoZgg.jpeg)
 
 Erlang was created for building fault-tolerant systems. This is natural since Erlang’s roots are in the telecommunication world. Most important design choices of the language were taken to fulfill this requirement. However this does not mean it is not clean or expressive. Let’s take a closer look.
-####Syntax
+
+#### Syntax
 
 [Erlang grammar](https://github.com/erlang/otp/blob/maint/lib/stdlib/src/erl_parse.yrl#L-0-L-535) is simple, it has less than 550 lines of code. That makes erlang syntax easy to understand even if it is different from mainstream languages. But what is more important it is really consistent. Enough talk:
 
@@ -134,7 +135,8 @@ I wanted to add that as you have noticed erlang uses “,”, “;” and “.�
 
 Let’s move onto more important things:
 
-####Expressiveness
+#### Expressiveness
+
 When thinking about Erlang expressiveness the first thing that comes to mind is message passing, process creation and management. Nevertheless pattern matching is a big player too in this field and serves a big purpose in making things easier for receiving messages. Let’s start by showing a simple example of pattern matching before moving on to message passing and process management.
 
 >4> Body.
@@ -257,7 +259,8 @@ A really interesting property, helped by single assignment and inmutability, is 
 The output of calling a method in most object oriented languages like for example C++, Java, Ruby depends on the state of the object. Previous calls to other method change the state of the object that is used by the methods you are calling. So the result will not depend only on the arguments, but also on what other methods have been called before. With referential transparency, you are on the greener side of the grass since you have some degree of determinism. Also writing test cases is way easier since, in general, you do not need to mock entire objects or use dependency injection since you only call functions with the arguments you want.
 
 You might think we are using complicated words for showing off. But as you will see in the following posts thanks to referential transparency and pattern matching we will be able to refactor nested branching implemented with cases into calling small and simple functions. In many languages, inspired by how Java and C++ implemented OOP, the code is so damn interdependent that it is more difficult to refactor it.
-####Processes and Messages
+
+#### Processes and Messages
 
 Functions in functional programming languages are first class citizens. This means that they are not discriminated. They can be assigned to variables, passed as arguments to other functions and returned as values from other functions. Say no to racism. Treat functions as any other type!
 ![](https://cdn-images-1.medium.com/max/800/1*FLmbrG6z0Pt25nbfeG775g.jpeg)
@@ -417,7 +420,8 @@ The receive in the process function that is running under a new process pattern 
 We send a die atom as a message to the same process. Since die matchs the first clause of the receive, a sentence stating that the process has died. As we do not call the function again effectively the process dies.
 
 When we try to send again a test atom as message to the process that was registered via the echo_process we get a bad argument exception. This happens since the process died the echo_process atom does not reference a process anymore, and obviously that’s why we can not send a message.
-####The final fight
+
+#### The final fight
 
 Now we are going to play with three processes: a client (the shell), a project manager and a developer. The shell will send a message to the project manager. The project manager will forward the task to developer. Simple but cool:
 
@@ -473,7 +477,8 @@ And we get this ouput printed out:
 The Dev process could be running in one server in the US, the PM process in an Europe based server and the Client, my shell, could be running on my computer here in Buenos Aires, Argentina. In another language this would require a really big code change. When using Erlang this only requires adding a few lines of code. Technically, we would have to register the processes globally and set up some kind of vpn so that the virtual machines see themselves as if on a local network. The point is that erlang has distribution built in, and getting to the point where systems run on clusters is not difficult.
 
 For the following posts we leave error detection and supervision of processes, an area where Erlang really really shines.
-####Moving foward
+
+#### Moving foward
 
 You might be asking yourself why would you want to create processes and send messages between them? Sooner rather than later in relative big project you will need to parallelize some code for example a call to a third party api that is taking too much time for example. That is why you will need to use a concurrency construct. In most programming languages threads, processes or any construct related to concurrency or parallelism is something you rarely use. In most universities it is something you will learn only after your first programming courses. You might have used a ThreadPool in Java or even a pthread in C. But it is not something you generally use or do as often as defining a class, instantiating an object, calling a function or writing a conditional statement. Even if this is changing and we now have really interesting libraries, frameworks and toolkits like Akka for the Java world, Concurrent-Ruby or Celluloid for Ruby or even languages as Clojure that already set a pretty high bar, truth be told concurrency is not the cornerstone of most languages. In Erlang you will use them as frequently as you use an if construct in C, because they are cheap and great for designing your systems.
 ![](https://cdn-images-1.medium.com/max/800/1*o61yZIq3SpkTDPn-pzAJTA.gif)
