@@ -1,4 +1,4 @@
-#Become an Erlang Cowboy and tame the Wild Wild Web — Part I
+# Become an Erlang Cowboy and tame the Wild Wild Web — Part I
 ####Erlang: From zero to coding a commenting system
 
 Jun 18, 2014
