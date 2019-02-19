@@ -1,9 +1,9 @@
 # Become an Erlang Cowboy and tame the Wild Wild Web — Part I
-####Erlang: From zero to coding a commenting system
+#### Erlang: From zero to coding a commenting system
 
 Jun 18, 2014
 
-####Objective
+#### Objective
 
 In the following series of posts we will be creating a commenting system like http://disqus.com/. The system will have normal HTTP/REST handlers but also some SSE and websockets handlers, and background jobs for uploading images to Amazon S3 and sending push notifications to iOS and Android clients via Amazon SNS. At the end of the series, we will connect Erlang and the system with other programming languages for those tasks that can be more difficult to do with Erlang.
 
@@ -18,6 +18,7 @@ At some point you will need to read them if you want to work with Erlang. My obj
 If you are interested on moving out of your comfort zone, you have come to the right place. I will do my best to help you learn a new and different way of thinking and designing applications. The length of the journey however will depend entirely on your will. You will have to play, reimplement the same idea in different ways and obviously fight with a new compiler to conquer victory.
 
 **Audience**
+
 This series of posts is oriented towards developers that need to create backend servers that normally use languages and frameworks such as Python and Flask, Twisted, Celery; Ruby and Rails/Sinatra/Grape, Sidekiq/Rescue, Concurrent Ruby with JRuby or Rubinius; Javascript with Nodejs, Express/Koa or Go. I have worked with these technologies for some years, creating HTTP servers that produced JSON consumed by single page applications, iOS and Android clients. I was very comfortable with them. But for the last year I have been using Erlang, and even if I still like Ruby, Python and Javascript, I have no regrets when I say that Erlang is superior, in most areas, for building these types of systems.
 
 My idea is to show how easily and cleanly you can create a distributed, resilient system thanks to Erlang semantics, its awesome BEAM virtual machine and some great libraries like Cowboy. If I cannot convince you to use Erlang on your next project, then I hope that at least you respect its awesome power.
