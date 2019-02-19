@@ -213,6 +213,7 @@ Now let’s store the result:
 `2> {ok, "302", Headers, Body} = ibrowse:send_req("http://www.google.com/", [], get).`
 
 ![](https://cdn-images-1.medium.com/max/400/1*9mLW7UAh0eDj2ljx5GfCJw.jpeg)
+
 `Pattern, pattern, pattern matching everything!!!`
 
 We sent a get request to google, got an answer. ‘ok’ is an atom, and “302" a string. They are not assigned, since they are not variables. So why did we use the equal sign to assign them? Well because in Erlang the equal sign is not exactly the same as assignment. Since Erlang supports the pattern matching mechanism, the equal sign is used as a match operator. It tries to find equivalence between the two sides, and then binds values to unbound variables, thus assigning them a value.
