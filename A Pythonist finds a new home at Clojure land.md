@@ -1,4 +1,4 @@
-#A Pythonist finds a new home at Clojure land
+# A Pythonist finds a new home at Clojure land
 
 Apr 14, 2017
 
