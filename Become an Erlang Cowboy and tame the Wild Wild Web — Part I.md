@@ -48,6 +48,7 @@ Programming languages have a defined set of goals. Most of them put **performanc
 >_The only reliable plan is to design for performance. Performance doesn’t mean speed; that’s taking the metaphor too literally. Speed counts, but a programming language is first of all a tool for thinking in. We want thinking in **Arc** to **feel like driving a 911.**— http://www.paulgraham.com/design.html_
 
 ![](https://cdn-images-1.medium.com/max/800/1*ezjVLCDsv-Qur7C2BvhnsQ.jpeg)
+
 `1973 Porsche 911E`
 
 >_The **Go** programming language is an open source project to **make programmers more productive**. Go is **expressive, concise, clean, and efficient**. Its concurrency mechanisms make it **easy to write programs that get the most out of multicore and networked machines**, while its novel type system enables flexible and modular program construction. Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It’s a **fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.** — http://golang.org/doc/_
@@ -57,7 +58,9 @@ Let’s see what Erlang has to say about itself:
 >**Erlang** is a programming language **used to build massively scalable soft real-time systems with requirements on high availability**. Some of its uses are in telecoms, banking, e-commerce, computer telephony and instant messaging. Erlang’s runtime system has built-in support for concurrency, distribution and fault tolerance. — http://www.erlang.org/
 
 Erlang seems to be the ugly duckling compared to other programming languages since it doesn’t describe itself as being fast, clean or expressive.
-![](https://cdn-images-1.medium.com/max/800/1*ezjVLCDsv-Qur7C2BvhnsQ.jpeg)
+
+![](https://cdn-images-1.medium.com/max/716/1*qV-Mz3gUxyM1Ug0XANoZgg.jpeg)
+
 Erlang was created for building fault-tolerant systems. This is natural since Erlang’s roots are in the telecommunication world. Most important design choices of the language were taken to fulfill this requirement. However this does not mean it is not clean or expressive. Let’s take a closer look.
 ####Syntax
 
