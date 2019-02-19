@@ -409,6 +409,7 @@ We register the process created by spawn(Echofun3) under the name echo_process.
 >die
 
 ![](https://cdn-images-1.medium.com/max/800/1*wysu8drrpca_-GPtNsoYNQ.gif)
+
 `killing a process thanks to message passing`
 
 >35> echo_process ! test.
@@ -482,7 +483,9 @@ For the following posts we leave error detection and supervision of processes, a
 #### Moving foward
 
 You might be asking yourself why would you want to create processes and send messages between them? Sooner rather than later in relative big project you will need to parallelize some code for example a call to a third party api that is taking too much time for example. That is why you will need to use a concurrency construct. In most programming languages threads, processes or any construct related to concurrency or parallelism is something you rarely use. In most universities it is something you will learn only after your first programming courses. You might have used a ThreadPool in Java or even a pthread in C. But it is not something you generally use or do as often as defining a class, instantiating an object, calling a function or writing a conditional statement. Even if this is changing and we now have really interesting libraries, frameworks and toolkits like Akka for the Java world, Concurrent-Ruby or Celluloid for Ruby or even languages as Clojure that already set a pretty high bar, truth be told concurrency is not the cornerstone of most languages. In Erlang you will use them as frequently as you use an if construct in C, because they are cheap and great for designing your systems.
+
 ![](https://cdn-images-1.medium.com/max/800/1*o61yZIq3SpkTDPn-pzAJTA.gif)
+
 `Message passing`
 
 Up to now we have only played with processes so that you can see how easy it is to use concurrency based primitives in Erlang since you do not require external library support like in most languages. You will see some of its real uses in the nexts posts. I must add that pattern matching plays an essential role too, and it is very well integrated with the the rest because it makes it very easy to select what to do based on the message received.
@@ -490,5 +493,7 @@ Up to now we have only played with processes so that you can see how easy it is 
 To sum up thanks to message passing, pattern matching, light processes you can avoid threads, mutex, semaphores and a lot of deadly weapons that sooner rather than later will backfire.
 
 Stay tuned, we will work on some real stuff next week: comments and threads, http endpoints of our commenting system!
+
 ![](https://cdn-images-1.medium.com/max/400/1*1LLFcr72yLfiLfFloQHaeg.jpeg)
+
 `This is me after my first hour playing with Erlang!`
