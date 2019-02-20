@@ -1,4 +1,4 @@
-#The big old reliable elephant: talking about Postgres with Craig Kerstiens
+# The big old reliable elephant: talking about Postgres with Craig Kerstiens
 
 Apr 26, 2017
 
@@ -12,6 +12,7 @@ Reach me via twitter at [@unbalancedparen](http://twitter.com/unbalancedparen) i
 _Discuss and vote at [lobsters](https://lobste.rs/s/zmqo84/interview_with_brad_chamberlain_about), [reddit](https://www.reddit.com/r/programming/comments/7x2jhp/interview_with_brad_chamberlain_about_a/) and [hn](https://news.ycombinator.com/item?id=16360381)._
 
 **********
+
 ![](https://cdn-images-1.medium.com/max/800/1*xBJtkf59c2V5ncf-Q-1_Eg.jpeg)
 
 **Why do you prefer PostgreSQL over other SQL databases?**
