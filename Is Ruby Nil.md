@@ -29,6 +29,7 @@ Let’s start with some graphs. Everybody loves graphs!
 As reported by the [TIOBE Index](https://en.wikipedia.org/wiki/TIOBE_index), Ruby has descended one position on its ranking during this year. On January 2013, Ruby was the eleventh most used language and is now the [twelfth](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html).
 
 [TIOBE ratings for Ruby](http://www.tiobe.com/index.php/content/paperinfo/tpci/Ruby.html)
+
 ![](https://cdn-images-1.medium.com/max/800/1*gt6Mt5Fq20JpvL3DNwYBNA.png)
 
 According to the [Popularity of Programming Language index](https://cdn-images-1.medium.com/max/800/1*gt6Mt5Fq20JpvL3DNwYBNA.png) (PYPL), Ruby is the ninth most popular programming language. PYPL is created by analyzing how often language tutorials are searched on Google.
@@ -52,6 +53,7 @@ The absolute number of conferences kept on growing, however the growth speed dim
 [Module counts](http://lanyrd.com/topics/ruby/2009/)
 
 ![](https://cdn-images-1.medium.com/max/800/1*syyHrXaZtCo9O1V6iTtTEQ.png)
+
 The number of modules seems to have kept growing at about the same speed for the last years.
 
 [Ruby’s lines of code](https://www.ohloh.net/p/ruby)
