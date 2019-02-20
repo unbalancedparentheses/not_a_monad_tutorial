@@ -1,4 +1,4 @@
-#Interview with Jesper Louis Andersen about Erlang, Haskell, OCaml, Go, Idris, the JVM, software and protocol design — PART II
+# Interview with Jesper Louis Andersen about Erlang, Haskell, OCaml, Go, Idris, the JVM, software and protocol design — PART II
 
 Dec 29, 2015
 
@@ -7,6 +7,7 @@ This is part II of the interview with [Jesper Louis Andersen](https://twitter.co
 *****
 Reach me via twitter at [@unbalancedparen](http://twitter.com/unbalancedparen) if you have any comments or interview request for [This is not a Monad tutorial](https://medium.com/this-is-not-a-monad-tutorial). **Stay tuned!**
 ****
+
 ![](https://cdn-images-1.medium.com/max/1000/1*DCzEYU60hk2pO7WCJj3GoQ.jpeg)
 
 **What are the advantages of the Erlang VM over the JVM and vice versa?**
