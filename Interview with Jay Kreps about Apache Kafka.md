@@ -1,4 +1,4 @@
-#Interview with Jay Kreps about Apache Kafka
+# Interview with Jay Kreps about Apache Kafka
 
 Feb 22, 2016
 
@@ -31,6 +31,7 @@ There are a few things that are different about Kafka:
 **In what type of structure do you persist messages and in which format?**
 
 A message or record in Kafka is just a key-value pair, where the key and value are some string of bytes.
+
 ![](https://cdn-images-1.medium.com/max/800/0*4N-FW2mHbx6AsraV.)
 
 Kafka provides the abstraction of a “topic” which is split into one or more partitions (usually many) and spread over a cluster of nodes. A topic is a kind of feed of records. Applications publish records into a topic, and the record’s key determines the partition within that topic that the record goes to. Each partition is replicated on multiple machines for fault-tolerance.
@@ -73,6 +74,7 @@ _“In the near-real-time processing domain stream processing frameworks do a go
 _The offline world seems to be moving in the direction of a handful of YARN frameworks for different specialized purposes. What almost all of these share is that they don’t require users to directly manage concurrency._
 
 _This leads me to think that putting more time into language support for single-server concurrency (software transactional memory and all that) is of limited utility. It will only help the implementors of these frameworks, not the end user.”_
+
 **Apart from Erlang, some languages like Go and Clojure added a good concurrency model and semantics from the start. Don’t you think there is any area where having good concurrency baked into the language is useful for the normal developer and not only for the implementor of frameworks?**
 
 The critique I was trying to make is sort of analogous to the [end-to-end principle](https://en.wikipedia.org/wiki/End-to-end_principle) for network protocols, basically you end up needing to solve the concurrency problem at a higher level anyway which makes the lower-level primitive the languages provide redundant. What I see is each language is trying to provide built-in primitives for multi-core programming. Other than Erlang I think most of these ignore the problem of distributed computing. But what has changed is that modern programming is always done in some framework that introduces a concurrency model at a higher level. Examples of these frameworks would be the whole Apple and Android stacks, numerous microservice frameworks, and things like Spark or Kafka Streams. These higher level frameworks are able to do a better job because they can make assumptions about the environment that just aren’t possible at the language level. So, for example, many of them are able to introduce a model that simultaneously solves for spreading computation over CPU cores on one machine as well as over multiple machines.
@@ -104,4 +106,4 @@ Jay also gave a few excellent talks about Kafka that explain why it was created 
 
 [Putting Apache Kafka to Use for Event Streams, Jay Kreps 2015/03/23](https://www.youtube.com/watch?v=el-SqcZLZlI)
 
-####Did you like it? [Follow me on Twitter — @unbalancedparen](https://twitter.com/unbalancedparen)
+#### Did you like it? [Follow me on Twitter — @unbalancedparen](https://twitter.com/unbalancedparen)
