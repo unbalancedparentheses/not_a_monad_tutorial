@@ -1,4 +1,4 @@
-#Lasp: a little further down the Erlang rabbithole
+# Lasp: a little further down the Erlang rabbithole
 
 May 9, 2017
 
@@ -85,4 +85,5 @@ The course is also taught via a MOOC on edX as well, and I’ll be doing
 a guest lecture this semester in Part 2 on Lasp and CRDTs.
 
 [Reliable Distributed Algorithms, Part 1](https://www.edx.org/course/reliable-distributed-algorithms-part-1-kthx-id2203-1x-0)
+
 [Reliable Distributed Algorithms, Part 2](https://www.edx.org/course/reliable-distributed-algorithms-part-2-kthx-id2203-2x)
