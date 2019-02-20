@@ -1,10 +1,11 @@
-#Is Ruby.nil? or Ruby.hype.dead? A current overview of Ruby 
-####The main languages I’ve used this year
+# Is Ruby.nil? or Ruby.hype.dead? A current overview of Ruby 
+#### The main languages I’ve used this year
 
 Mar 26, 2014
 
 My last post was a really short mention of the resources I have used to learn and develop my skills in JavaScript and Erlang. On this post I’m going to share with you some thoughts I have regarding Ruby’s present.
-###Ruby
+
+### Ruby
 
 Oh my dear Ruby, son of Lisp, Perl, Eiffel and Smalltalk, time has passed but I think you still are such an amazing creature. Sure, you need to resolve some issues. Everbody does. Some really intelligent doctors have stated that you are sick, that you might be dying, others are not quite sure about that:
 
@@ -14,7 +15,8 @@ Oh my dear Ruby, son of Lisp, Perl, Eiffel and Smalltalk, time has passed but I 
 * [Discussion on Hacker News about Introducing Rubinius X](https://news.ycombinator.com/item?id=6553767)
 * [Discussion on Reddit about the Hacker News discussion](http://www.reddit.com/comments/1oi8wd)
 **********
-####Quantitative analysis
+
+#### Quantitative analysis
 
 Let’s start with some graphs. Everybody loves graphs!
 
@@ -33,7 +35,7 @@ According to the [Popularity of Programming Language index](https://cdn-images-1
 
 According to [RedMonk Programming Language Rankings](http://redmonk.com/sogrady/2014/01/22/language-rankings-1-14/), at this moment, Ruby is the seventh most popular language based on correlations between GitHub’s and Stack Overflow’s rankings.
 *******************
-####Other popularity indicators
+#### Other popularity indicators
 
 Let’s move onto other indicators.
 
@@ -48,32 +50,40 @@ Ruby conferences registered by [lanyrd](http://lanyrd.com/) per year:
 The absolute number of conferences kept on growing, however the growth speed diminished.
 
 [Module counts](http://lanyrd.com/topics/ruby/2009/)
+
 ![](https://cdn-images-1.medium.com/max/800/1*syyHrXaZtCo9O1V6iTtTEQ.png)
 The number of modules seems to have kept growing at about the same speed for the last years.
 
 [Ruby’s lines of code](https://www.ohloh.net/p/ruby)
+
 ![](https://cdn-images-1.medium.com/max/800/1*Dibiyr75hsGDLCatZTiRxQ.png)
 
 Ohloh reports that the Ruby language number of lines has grown at a steady speed.
 
 [Interest over time reported by Google Trends](https://www.google.com/trends/explore#cat=0-5&q=%2Fm%2F06ff5&cmpt=q):
+
 ![](https://cdn-images-1.medium.com/max/800/1*bHHmLXNdXqaT9IbDoEcfpg.png)
 
 However the interest over time registered by Google seems to have plunked.
 
 [Ruby and Javascript Indeed job trends (absolute)](http://www.indeed.com/jobtrends?q=ruby)
+
 ![](https://cdn-images-1.medium.com/max/800/1*kFX3kYHAfcR7_NuXO0PtbA.png)
+
 [Ruby and Javascript Indeed job trends (relative)](http://www.indeed.com/jobtrends?q=ruby%2C+javascript&l=&relative=1)
+
 ![](https://cdn-images-1.medium.com/max/800/1*IwJKDz6AwEQxl93gKlvM7g.png)
 
 Nevertheless, even if Ruby job postings are way down compared to JavaScript, they are still on the rise and its percentage growth continues to be quite important. In the startup world, there are at least [five startups](https://angel.co/javascript/jobs) registered on AngelList that need a JavaScript developer for [each startup](https://angel.co/ruby/jobs) that needs at least someone with Ruby knowledge.
 
 These statistics show that even though Ruby is not as popular as it was a few years ago, it’s still a big player.
 *************
-####Qualitative data
+#### Qualitative data
 
 So far, we have seen some numbers. Now it’s a good time to check other indicators that account for liveliness of Ruby.
+
 ![](https://cdn-images-1.medium.com/max/800/1*P_BdP89ac9dcWAMDTBoaPw.png)
+
 Let me mention a few interesting tools created in Ruby apart from Rails and other web frameworks such as Sinatra or Padrino. I think this might give an idea about Ruby’s usage. [Homebrew](http://brew.sh/), coded in Ruby, is the simplest and more useful package manager for Mac OS X. Even if I prefer other alternatives, created in Nodejs, such as [Docpad](https://github.com/bevry/docpad), Jekyll, which is coded in Ruby, was one of the main reasons for the popularity of static page generators. [Discourse](http://www.discourse.org/), the best discussion platform. [Artoo](http://artoo.io/) is a micro-framework for robotics. I don’t know a heck about it. Ruby also has got the two most used IT automation tools that exist: [Chef](http://www.getchef.com/chef/) and [Puppet](http://puppetlabs.com/). These are two really big players that won’t disappear anytime soon and it doesn’t look as though they want to move away from Ruby.
 
 Regarding books, Ruby always had great and fascinating books such as:
@@ -100,7 +110,7 @@ As we can see, very different pieces of software are crafted with Ruby and Ruby 
 
 ********************
 
-####Ruby’s hardest problem
+#### Ruby’s hardest problem
 
 This doesn’t mean there are no problems on Ruby. Ruby seems to be in the same order of magnitude in terms of speed than [Python, PHP, and Perl](http://www.unlimitednovelty.com/2012/06/ruby-is-faster-than-python-php-and-perl.html) but in general Ruby it is not the fastest kid on the block. Even Matsumoto, its creator, admits it!
 
@@ -142,7 +152,7 @@ Again I think it’s a good idea to hear what Matsumoto thinks:
 >_**Matsumoto**: I don’t see any problem about other implementations just because the diversity is very sound, the healthy things they have. And actually Ruby, the language, is very good for productivity but the programming environment differs from application to application. For example, some clients require very stable and multicore applications on top of the JVM. In that kind of field, JRuby works better than my Ruby, actually, which is called C Ruby. For most of the cases, C Ruby is good for Web applications. But in certain situations, JRuby and maybe Rubinius are a better fit for a particular requirement._
 
 **********
-####We need a concurrency model!
+#### We need a concurrency model!
 
 Despite having real concurrency or being able to run code in many cores, doesn’t mean it’s easy to do so:
 
@@ -173,7 +183,9 @@ The best concurrency model I know in the Ruby land is the one provided by the fa
 >_“Objects can message objects transparently that live on other machines over the network, and you don’t have to worry about the networking gunk, and you don’t have to worry about finding them, and you don’t have to worry about anything. It’s just as if you messaged an object that’s right next door.” -**Steve Jobs describing the NeXT Portable Distributed Object system**_
 **************
 **Why I like Ruby**
+
 ![](https://cdn-images-1.medium.com/max/800/1*U24Mc9wNeiSNp2_eOYIGWg.png)
+
 Time to land on Earth. We have spent too much time floating on the sky. I have never explained why I use and like Ruby.
 
 In comparison with other dynamic type languages it has an awesome set of tools as [rubocop](https://github.com/bbatsov/rubocop), [ruby-lint](https://github.com/bbatsov/rubocop) and [reek](https://github.com/troessner/reek) that help you analyze your code. Furthermore it has the best [REPL](https://github.com/troessner/reek) that I am aware of: [pry](http://pryrepl.org/). Watch [REPL driven development with Pry](http://youtu.be/D9j_Mf91M0I) and [Pry, The Good Parts!](http://youtu.be/D9j_Mf91M0I) to learn how it can help you speed up your development.
@@ -254,7 +266,7 @@ I have not mentioned before that Ruby is also an excellent language for creating
 
 Finally, if you need to create a webpage or a REST API, specially when you don’t need real-time stuff, with limited time and money I can’t currently imagine a better replacement for Ruby and Rails.
 ************
-####Closing words
+#### Closing words
 
 I won’t deny that Ruby has lost some momentum. But that doesn’t mean the language is dead. [I think it has matured](http://www.codinghorror.com/blog/2013/03/why-ruby.html) and that it is a great tool to add to your arsenal as a developer.
 
