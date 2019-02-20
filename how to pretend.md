@@ -1,4 +1,4 @@
-#How to pretend you have social skills
+# How to pretend you have social skills
 
 Aug 14, 2018
 
@@ -26,7 +26,7 @@ First of all let’s define what social skills are. According to wikipedia socia
 
 Since many people have asked me how to develop soft skills and which are the most common problems, I thought I’d share a few vignettes of what I do at Lambda. I hope you find them as interesting as I do.
 
-###**Don’t kill the dog**
+### **Don’t kill the dog**
 
 Two programmers had received a message from the client via Slack. The message seemed pretty straightforward. It said: “Feature X isn’t working”. Next, the tech lead of the client listed a series of detailed steps to solve this problem. This client was pretty new so we needed some help to understand how to solve it since the issue was related to business rules we didn’t know. The diligent programmers followed the steps carefully and once they were done reported back to the client: “There! It’s done”; and went on to fulfill the tasks that were awaiting them in Github.
 
@@ -38,7 +38,7 @@ The client described a problem to you. The fact that they helpfully provided you
 
 The takeaway here is: **your job is to find solutions to problems**. Test your solutions. Make sure you provided a solution for the client’s problem. Their suggestions may help but it’s not their job to spell out the solution for you. Otherwise it would be program-by-numbers! Always remember your goal. Test what you just did to see if you met that goal. If the provided solution didn’t work, try another one. If you don’t have permission to modify something, report back: the client needs to know it couldn’t be fixed by you and why.
 
-###**The truth in your heart**
+### **The truth in your heart**
 
 I was coaching programmers before an interview with a client. One of the topics we expected would come up was their opinion on different programming languages and tools. We didn’t know the interviewer’s style, so the interview could be more structured or more like a casual conversation on programming. I began with some basic, open-ended questions, like “what programming language do you prefer and why?”.
 
@@ -58,7 +58,7 @@ So, young developers. of the world, don’t fret. If you feel paralyzed when an 
 
 ![](https://cdn-images-1.medium.com/max/800/0*tb0bOX6gqdjieBZE)
 
-###Communication
+### Communication
 
 Most of the programmers at Lambda speak English as a second language — their first one being Spanish. Since communication between the programmers and the (often English-speaking) client is key to perform well, we devised a series of exercises to improve their communication skills.
 
@@ -74,7 +74,7 @@ I then instructed the executor of the instructions to proceed as if they were de
 
 By the third or fourth iteration, their sentences had become longer and better structured, and their language more precise. The executor was also more alert and made sure they understood instructions perfectly.
 
-###Technical problems and people problems: know the difference
+### Technical problems and people problems: know the difference
 
 Sometimes personal issues are disguised as technical ones. For example, a worker repeatedly pointing out minor mistakes to a colleague in front of third-parties might not be motivated by a desire to improve the quality of work but to make the other feel uncomfortable.
 
