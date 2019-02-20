@@ -1,12 +1,15 @@
 ![](https://cdn-images-1.medium.com/max/800/1*tGd9NQlW18pmX4UpST2xYQ.png)
-#Harvey, an operating system with Plan 9's shadow
+
+# Harvey, an operating system with Plan 9's shadow
 
 Jul 24, 2015
 
 [This is not a Monad tutorial](https://medium.com/this-is-not-a-monad-tutorial) interviewed Álvaro Jurado about the development of [Harvey OS](http://harvey-os.org/) ([code in github](http://harvey-os.org/)). If you haven’t yet played around with Plan 9, this will make you want to do so. Be sure to check future posts because we will be keeping an eye on the development of Harvey OS, Plan 9 derivates and Plan 9 userland tools on other operating systems.
 
 **What is Harvey OS?**
+
 ![](https://cdn-images-1.medium.com/max/400/1*NSlnD5Bctnl5iG_Ae1mXCw.png)
+
 Harvey’s website states that its aim is to provide a modern, distributed, 64­bit operating system that extends the elegance of the original Unix model, in which all resources are represented as files and directories, to a networked environment, and allows for new ways of working.
 
 **Why do you take Plan 9 as an inspiration to achieve that objective?**
@@ -75,11 +78,13 @@ I tried Richard Miller’s Raspberry Pi port, of course. But not Amazon EC2. I a
 I like very much Go. In fact, Harvey fast build tool is written in Go. And our team is working to have Go ported to Harvey at this moment. We almost have Hello, world running. Very useful, very powerful, very simple and easy. With Go in Harvey we could do many many things without porting many programs from other systems.
 
 **The [Acme](http://acme.cat-v.org/) editor was originally developed by Rob Pike for Plan 9. It is an editor which encourages to use the mouse a lot. I am an Emacs and Vim user and it has been interesting for me to find that there are quite a few really experienced developers that use Acme on their daily basis. Are you using it to develop Harvey? Do you think we should give it a try?**
+
 ![](https://cdn-images-1.medium.com/max/800/1*DNHGzoUAazEMZpRRzkLqrA.png)
+
 Which editor a person uses is as personal a decision as what kind of car they like, or what their favorite music is. Well, I think is a matter of taste. And all programmers have their own taste. Personally I used what I like or need at any moment. But yes, I used many times Acme, usually from inside a Plan 9 system or sometimes from plan9port. I really don’t know who is using what in Harvey’s core team, but everybody should give a try to Acme. Sometimes I saw myself trying to edit a menu bar in a GTK window, so definitively Acme can hook up you. At the same time, we intend to allow users to be able to run whatever the way. Emacs and vi should be working soon.
 ********
 
-####Readers’ questions
+#### Readers’ questions
 
 **[Apy asked in lobste.rs](https://lobste.rs/s/aupwny/harvey_operating_system_with_plan_9_s#c_kd7rhb): For someone who has no direct experience using Plan9, what is security like in this world of being able to import anyone’s network stack?**
 
@@ -95,4 +100,5 @@ Ron: Possibly, depending on the nature of the compromise, but that’s true for 
 Ron: Plan 9 has the concept of a host owner, the person who owns that node. The hostowner is set on boot. The kernel can make those ports accessible to a process if that process has the same userid (string, not number) as the hostowner, i.e. has been authenticated. It’s not a matter of inheritance as in the unix model.
 
 Álvaro: Root was one of the first things that Plan 9 authors wanted to remove. In a distributed environment with private namespaces, the concept of a superuser has no sense. Every user can make his/her changes without affect thebsystem or other users. The hostowner role is (or should be) just booting the system and its servers.
+
 ![](https://cdn-images-1.medium.com/max/800/1*q-RmakqnSw6qyh8gTC_izQ.jpeg)
