@@ -1,7 +1,9 @@
-#Interview with Robert Virding, creator of Lisp Flavored Erlang, an alien technology masterpiece
+# Interview with Robert Virding, creator of Lisp Flavored Erlang, an alien technology masterpiece
 
 Feb 29, 2016
+
 ![](https://cdn-images-1.medium.com/max/800/1*0_N8_5MqdROjW5duRb6Dpw.png)
+
 >As you might know zombies, skeletons and momies are good friends of aliens
 
 This time I interviewed [Robert Virding](https://twitter.com/rvirding), co-creator of Erlang and creator of [Lisp Flavored Erlang](http://lfe.io/) (LFE). I am an Erlang developer and Lisp fan — if you are learning Clojure check out my post [How to earn your Clojure white belt](https://medium.com/this-is-not-a-monad-tutorial/how-to-earn-your-clojure-white-belt-7e7db68a71e5#.dtmcog9gk) — so logically I am very excited about LFE.
@@ -73,6 +75,7 @@ So far the roadmap has been a little “I just want to add this one last feature
 
 *******
 **Did you like it? [Follow me on Twitter — @unbalancedparen](https://twitter.com/unbalancedparen)**
+
 Oh and I recommend that you read this email from Robert about LFE titled _“A bit of philosophy and some design principles”_:
 
 >_There was a bit of discussion on the IRC about the CL module and where LFE gets its impulses from, that it doesn’t try to stand on its feet. There are things in it from scheme and CL but most of it is based on Erlang and the features it provides and the type of systems you build using it._
