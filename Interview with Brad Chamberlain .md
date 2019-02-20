@@ -1,4 +1,4 @@
-#Interview with Brad Chamberlain about a productive parallel programming language called Chapel
+# Interview with Brad Chamberlain about a productive parallel programming language called Chapel
 
 Feb 12, 2018
 
@@ -10,6 +10,7 @@ Reach me via twitter at [@unbalancedparen](https://twitter.com/unbalancedparen) 
 
 _Discuss and vote at [lobsters](https://lobste.rs/s/zmqo84/interview_with_brad_chamberlain_about), [reddit](https://www.reddit.com/r/programming/comments/7x2jhp/interview_with_brad_chamberlain_about_a/) and [hn](https://news.ycombinator.com/item?id=16360381)._
 *******
+
 **What problems does Chapel solve? Who is the ideal user of Chapel?**
 
 Chapel supports scalable parallel programming in a portable way: programs developed on a user’s multicore laptop can be run on commodity clusters, the cloud, and supercomputers from [Cray](https://news.ycombinator.com/item?id=16360381) or other vendors. Chapel is also designed to vastly improve the productivity of performance-oriented programming, whether serial or parallel. As such, it supports programs with Python-like clarity while retaining the performance of lower-level approaches to programming like C, C++, Fortran, MPI, and OpenMP (the _de facto_ standards for high-performance parallel programming).
@@ -69,6 +70,7 @@ Today, Chapel programs tend to perform competitively with hand-coded C and C++. 
 Since we care about code clarity, we tend to graph the Computer Language Benchmark Game results on scatter plots showing normalized execution times versus code compactness (as a proxy metric for clarity). In such views, Chapel tends to fall in a very unique position, being competitive in speed with the fastest languages while also nearly as compact as scripting languages. The following two plots illustrate this (the right graph zooms in on the fastest entries for readability):
 
 ![](https://cdn-images-1.medium.com/max/800/0*5HKm6tfdrqfXiXWP.)
+
 ![](https://cdn-images-1.medium.com/max/800/0*YHDLOnTtFepJmsUV.)
 
 **Why did you implement Chapel using LLVM?**
