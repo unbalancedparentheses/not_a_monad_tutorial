@@ -1,4 +1,4 @@
-#One does not simply build a user interface: our ClojureScript/re-frame app
+# One does not simply build a user interface: our ClojureScript/re-frame app
 
 Dec 4, 2017
 
@@ -8,19 +8,22 @@ Reach me via twitter at [@unbalancedparen](http://twitter.com/unbalancedparen) i
 
 _Discuss and vote at [lobsters](https://lobste.rs/s/zmqo84/interview_with_brad_chamberlain_about), [reddit](https://www.reddit.com/r/programming/comments/7x2jhp/interview_with_brad_chamberlain_about_a/) and [hn](https://news.ycombinator.com/item?id=16360381)._
 *******
+
 ![](https://cdn-images-1.medium.com/max/800/1*BdFV-bGWhQ5HiIL6VfY5xg.png)
+
 Before getting into the details, a couple of disclaimers are in order:
 1. Me and most of my coworkers have done front end over the years, but we’re all primarily back end developers. Particularly, the last time I worked on a Single-Page Application, Angular 1 was king; I vaguely knew about React ideas, but never came close to using it.
 2. Although we threw in a wizard and a fancy yearly calendar view, the application was your typical CRUD. Exactly the kind of thing for which [you usually don’t want to build a Single-Page application](https://medium.freecodecamp.org/why-i-hate-your-single-page-app-f08bb4ff9134). We knew this and we choose to do a SPA anyway because this wasn’t a paid project so we weren’t optimizing for resource efficiency but for learning.
 
-###Language: JavaScript vs ClojureScript vs Elm
+### Language: JavaScript vs ClojureScript vs Elm
 
 The first big decision was the programming language. JavaScript is the default option, but even with a solid knowledge of the language and coming out of a couple of years with Node.js as my daily work platform, becoming a productive front end JavaScript developer in 2017 is a notable feat. The tooling and even the language keeps moving under your feet. For engineers that only get out of the server from time to time, it all feels like throw-away knowledge (just like my previous Angular experience is of little use today). And if you want to do fashionable JavaScript, you end up using transpilers anyway, so why not just use a different language altogether? I mean, we’re using Erlang already, it’s not like we mind throwing some weirdness into the mix.
 
 Elm has always been a very tempting choice for us, but learning an entire language (and one so different from the others I already know) was too much to take on for a side project whose goal was to get familiar with Erlang.
 
 And then there was ClojureScript. I was already fluent in Clojure, had some experience with ClojureScript, my Emacs was already prepared to move parentheses around… [And it delivered its promises](https://www.youtube.com/watch?v=gsffg5xxFQI). _lein new re-frame holiday-ping_ is all it took to setup a workflow with a live REPL, hot code reloading (thanks primarily to [lein-figwheel](https://github.com/bhauman/lein-figwheel/)) and advanced JavaScript compilation. This is not only simpler than all the disparate tools you need to do the same job in JavaScript, but also requires a smaller effort than [setting up a good workflow in JVM Clojure](http://thinkrelevance.com/blog/2013/06/04/clojure-workflow-reloaded).
-###Om vs Reagent vs Om.next vs re-frame
+
+### Om vs Reagent vs Om.next vs re-frame
 
 Next up was the library or framework to build the UI. We could have gone with a simple DOM manipulation library like [dommy](https://github.com/plumatic/dommy), but we decided — at our own risk — to build a Single-Page App, therefore we looked at React wrappers: [Reagent](http://reagent-project.github.io/) and [Om](https://github.com/omcljs/om). We couldn’t afford to build prototypes with both tools so we have to settle for reviewing the documentation and examples, and getting opinions from friends and the web. As Gandalf once said: _all engineers have to do is to pick a library with the time that is given to them._
 
@@ -32,13 +35,13 @@ So I leaned more towards Reagent than Om. But those only provide React wrappers;
 >
 >_I think the only danger arises if this process is not conscious — if someone creates a dog’s breakfast of an architecture and doesn’t even know they’ve done it. I’ve had MANY people privately admit that’s what happened to them… and then they swapped to re-frame to get some structure back. So, my advice is… if your application is a little more complicated, be sure to make a conscious choice around architecture, because one way or another you’ll be using one._
 
-###CSS framework
+### CSS framework
 
 For styles we went with [Bulma](https://bulma.io/): we wanted something lighter than Bootstrap, specifically no JavaScript. Bulma is simple, easy to use, feels lightweight and looks good. In combination with hiccup it meant I was pulling off a beautiful UI without HTML, CSS or JavaScript; all my components were conveniently built by moving Clojure data around Emacs.
 
 Perhaps the one downside was that there aren’t many pre-baked fancy components like Bootstrap has. We kind of made that choice anyway by using ClojureScript in the first place; when we wanted a complex component we either coded it ourselves (we did with tag list inputs) or we avoided them (e.g. no type-ahead selects).
 
-###Developing a Single-Page App with ClojureScript and re-frame
+### Developing a Single-Page App with ClojureScript and re-frame
 
 I just needed to read the first [few re-frame tutorials](https://github.com/Day8/re-frame/tree/master/docs) to get started. It felt like re-frame built on the concepts I was already familiar from Clojure and I became reasonably productive in a matter of days, which was amazing considering I hardly knew the first thing about React. [This guide](https://purelyfunctional.tv/guide/re-frame-building-blocks/) provides a good overview of the framework.
 
@@ -50,7 +53,7 @@ The one thing I don’t quite like about re-frame is how all definitions (reg-ev
 
 While re-frame is a very opinionated framework and provides a lot structure, there still are some design aspects left to the programmer. Following are some notes of decisions I had to make; a lot of it I figured out along the way and there may be better ways to do it. Critiques and suggestions are certainly welcome.
 
-###Routing and navigation
+### Routing and navigation
 
 Perhaps the most complex part of the front end application was properly handling navigation. It’s also the place where you pay the penalty of using a SPA framework to build an application that requires browser-like logic (i.e. multiple multiple entry points based on the url, working back/forward buttons, etc.).
 
@@ -114,7 +117,7 @@ Now we needed some way to specify what data was to be fetch for each route, with
 
 Even though this felt a bit hacky, seeing the view functions become cleaner somewhat validated the approach. For such an opinionated framework, though, I wished there was a recommended way to handle this use case, which is probably a frequent one (maybe there is and I just didn’t find it).
 
-###Forms and validations
+### Forms and validations
 
 There must be few tasks as repetitive as writing forms in a web application, specially if there are many CRUD components. After writing a couple of them, I obviously started looking for ways to build a reusable component that would create them based on a specification. I managed to do so, again by resorting to multimethods, such that each method would render differently based on the input type (text, password, select, etc.); the API ended up looking like:
 
@@ -157,7 +160,7 @@ Finally, I needed a way to introduce reusable validations to the form component,
 >(fn [validations _]
    (every? true? (map first validations))))
 
-##Closing thoughts
+## Closing thoughts
 
 This was a modest project and as such didn’t reveal any higher truth. Instead, it reinforced some ideas and reminded us about things we tend to forget. I liked that it gave us a better perspective than what we’re used to, working mainly as back end engineers: this time we had to write a front end to our APIs and be a user to our interfaces.
 
