@@ -5,7 +5,9 @@ Aug 28, 2015
 After our [last interview with Brian McKenna](https://medium.com/this-is-not-a-monad-tutorial/interview-with-brian-mckenna-about-roy-purescript-haskell-idris-and-dependent-types-63bb1289ea3d) for [This is not a Monad tutorial](https://medium.com/this-is-not-a-monad-tutorial) we interviewed [Nenad Rakocevic](https://github.com/dockimbel), creator of the [Red](http://www.red-lang.org/) programming language.
 
 From my completely subjective point of view Red and Rebol are quite strange creatures! But don’t get me wrong, that doesn’t mean something bad. For example, I am not aware of many high-level languages which features an embedded DSL for general-purpose low-level programming or that have 50 native types. You should check it out, you might find some interesting ideas inside Red development.
+
 ![](https://cdn-images-1.medium.com/max/400/1*C0sMUPxpbBs40YIBX848jQ.jpeg)
+
 *****
 Reach me via twitter at [@unbalancedparen](http://twitter.com/unbalancedparen) if you have any comments or interview request for [This is not a Monad tutorial](https://medium.com/this-is-not-a-monad-tutorial). **Stay tuned!**
 ********
@@ -16,6 +18,7 @@ Reach me via twitter at [@unbalancedparen](http://twitter.com/unbalancedparen) i
 I started programming micro-computers, an Amiga in my case, in my teens. I have now been programming for more than 30 years. After my early experiences, I was unhappy with existing programming languages and tools. This was mostly because I found them not productive or friendly enough for my taste. So, when I stumbled across the Rebol language, in 1999, it was an eye-opener on what was wrong with so called “modern” computing practice. (Nowadays it’s even worse). Fighting complexity on all software fronts became the logical course of action.
 
 In 2010, Rebol was closed source. I deeply felt that the approach had a lot more to offer but Rebol was barely evolving. This was the trigger for me to start work on an open source relative to Rebol with much higher ambitions and a broader field of usage.
+
 ![](https://cdn-images-1.medium.com/max/400/1*869fRKUVs2sTdVDYrqblMQ.png)
 
 **What are the main selling points of Red?**
