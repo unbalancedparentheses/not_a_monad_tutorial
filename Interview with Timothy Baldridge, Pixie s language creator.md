@@ -3,11 +3,15 @@
 Dec 8, 2014
 
 We interviewed [Timothy Baldridge](https://twitter.com/timbaldridge), creator of [Pixie](https://github.com/pixie-lang/pixie), a small fast, native lisp with _magical_ powers. We hope you try it out!
+
 ![](https://cdn-images-1.medium.com/max/800/1*jYqNf1VQpmxhv7WwkPm1Ag.jpeg)
+
 `“In modern use, Pixie can be synonymous with fairies or sprites”`
 
 **Please tell us a little bit about Pixie’s inception and the road to the current status.**
+
 ![](https://cdn-images-1.medium.com/max/400/1*s4cstPwICRsq-gb1zJ261Q.jpeg)
+
 `Timothy Baldridge`
 
 I've been a language hacker for years, and have played around with RPython (PyPy’s tool-chain) for some time. I've always had it in the back of my head that a lisp on RPython would be a good project. But it seems like this time it’s really taken off.
