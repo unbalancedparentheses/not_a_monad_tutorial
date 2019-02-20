@@ -1,6 +1,7 @@
-#How to earn your Clojure white belt
+# How to earn your Clojure white belt
 
 Sep 6, 2015
+
 ![](https://cdn-images-1.medium.com/max/800/1*uFlthCHz1YbmOvzhdVBrFw.jpeg)
 
 I tend to think that if I do not know how to implement something then I do not undestand completely how it works. That is why I want to learn so many things: new frameworks, programming languages, garbage collectors, type systems, compilers, editors, operating systems, protocols, kernel development. The road to enlightenment is long and difficult. To make things worse, you need to invest time on keeping up to date with technologies you thought you already knew. I usually feel like Mario in one of those levels where he needs to jump between moving clouds to reach the finish line.
@@ -14,7 +15,7 @@ That is why one of the best skills to get is being able to separate the wheat fr
 * Clojurescript: Clojure that targets JavaScript with great libraries such as [reagent](https://github.com/reagent-project/reagent), an interface to React.js that is really simple and useful. Check David Nolen’s talks called ClojureScript: [Lisp’s Revenge](https://github.com/reagent-project/reagent) and [Introduction to ClojureScript](https://youtu.be/-I5ldi2aJTI)
 * JVM’s power (available almost everyhwere, optimized garbage collector, JIT compilation, Java interoperability), but also some issues such as not being able to properly support tail call optimization and awful stacktraces. If you are a Java developer you should check part [I](https://www.youtube.com/watch?v=P76Vbsk_3J0) and [II](https://www.youtube.com/watch?v=hb3rurFxrZ8) from Rich Hickey’s Clojure for Java Programmers talk
 
-####Ready, steady, go!
+#### Ready, steady, go!
 
 Install [Leiningen](http://leiningen.org/#install) and configure your editor of choice.
 
@@ -33,7 +34,7 @@ Install [Leiningen](http://leiningen.org/#install) and configure your editor of 
 * Clojure formatter [cljfmt](https://github.com/weavejester/cljfmt)
 * Check simple issues in your code [bikeshed](https://github.com/dakrone/lein-bikeshed)
 
-####Love at first sight
+#### Love at first sight
 
 First of all get an idea of Clojure syntax and semantics:
 
@@ -43,7 +44,8 @@ First of all get an idea of Clojure syntax and semantics:
 4. [Listen to Software Engineering Radio’s interview with Rich Hickey](http://www.se-radio.net/2010/03/episode-158-rich-hickey-on-clojure/)
 
 If you do not understand something move on. At this stage the only objective is to grasp some basic ideas about Clojure.
-####Practice plus reading equals perfection
+
+#### Practice plus reading equals perfection
 
 1. First practice with the [Koans](http://clojurekoans.com/)
 2. Then read [Clojure for the Brave and True](http://www.braveclojure.com/), a simple and short book. If you prefer to watch videos, you can buy the course [Introduction to Clojure](http://www.purelyfunctional.tv/intro-to-clojure) from PurelyFunctionalTV.
@@ -54,7 +56,8 @@ If you do not understand something move on. At this stage the only objective is 
 It is always a good idea to have the [cheatsheet](http://clojure.org/api/cheatsheet) at hand.
 
 Other two good tutorials worth mentioning are [Clojure from the ground up](https://aphyr.com/tags/Clojure-from-the-ground-up) and [Hitchhiker’s Guide to Clojure](https://aphyr.com/tags/Clojure-from-the-ground-up).
-####Idiomatic Clojure
+
+#### Idiomatic Clojure
 
 Clojure is not Java, neither Common Lisp or Scheme. You should learn to write idiomatic Clojure. The Joy of Clojure is your best friend to become a native Clojure speaker:
 [The Joy of Clojure](http://www.joyofclojure.com/the-book/)
@@ -65,7 +68,8 @@ It is also important to follow table manners or the [Clojure style guide](https:
 If you have trouble like me grasping macros, then you should also check out [Mastering Clojure Macros](https://pragprog.com/book/cjclojure/mastering-clojure-macros).
 
 Oh, if you miss your type checking then now it is a good tim    e that you read about [optional type system](http://typedclojure.org/) for Clojure.
-####Keep up to date
+
+#### Keep up to date
 
 * [Planet Clojure](http://planet.clojure.in/)
 * [Clojure Gazette](http://www.clojuregazette.com/)
@@ -73,18 +77,18 @@ Oh, if you miss your type checking then now it is a good tim    e that you read 
 * [Reddit](https://www.reddit.com/r/Clojure/)
 * [ClojureTV](https://www.youtube.com/user/ClojureTV)
 
-####Know the full arsenal at your disposal
+#### Know the full arsenal at your disposal
 
 * [Clojure Toolbox](http://www.clojure-toolbox.com/)
 * [Awesome Clojure](https://github.com/razum2um/awesome-clojure)
 
-####Get help
+#### Get help
 
 * [Google Group](https://groups.google.com/forum/#!forum/clojure)
 * IRC: #clojure channel in Freenode server
 * [Clojurians Slack](https://clojurians.slack.com/)
 
-####Introduction to Clojurescript
+#### Introduction to Clojurescript
 
 Clojure on the frontend trench:
 
@@ -92,7 +96,7 @@ Clojure on the frontend trench:
 2. [Differences from Clojure](https://github.com/clojure/clojurescript/wiki/Differences-from-Clojure)
 3. [A series of tutorials on Clojurescript](https://github.com/magomimmo/modern-cljs)
 
-####Building your own Lisp
+#### Building your own Lisp
 
 Building a Lisp is similar to a road trip with friends and good music but with no particular destination. Make yourself comfortable and enjoy the ride!
 
