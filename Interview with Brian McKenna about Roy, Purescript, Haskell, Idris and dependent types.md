@@ -1,10 +1,11 @@
-#Interview with Brian McKenna about Roy, Purescript, Haskell, Idris and dependent types
+# Interview with Brian McKenna about Roy, Purescript, Haskell, Idris and dependent types
 
 Aug 26, 2015
 
 As promised in our [last interview](https://medium.com/this-is-not-a-monad-tutorial/eric-merritt-erlang-and-distributed-systems-expert-gives-his-views-on-beam-languages-hindley-a09b15f53a2f) for [This is not a Monad tutorial](https://medium.com/this-is-not-a-monad-tutorial) we interviewed Brian McKenna, creator of the Roy programming language. In this interview Brian talks about Roy, its implementation, how it compares with Purescript, and also about dependent types and other interesting technologies like Morte and Unison. I highly recommend that you check [Brian’s blog](http://brianmckenna.org/blog/) after you finish reading this interview.
 
 In the following weeks we will be talking with the creators of [Red programming language](http://www.red-lang.org/), Robert Virding — Erlang co-inventor and [Lisp Flavored Erlang](http://lfe.io/) creator — and with [MirageOS unikernel](https://mirage.io/) dev team. Stay tuned! Reach me via twitter at [@unbalancedparen](https://twitter.com/unbalancedparen), if you have any comment or request.
+
 ![](https://cdn-images-1.medium.com/max/800/1*vYf7TCGE19Gni5ssKXQaHA.png)
 
 **What are Roy’s main features?**
