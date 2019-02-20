@@ -11,6 +11,7 @@ _Discuss and vote at [lobsters](https://lobste.rs/s/zmqo84/interview_with_brad_c
 
 ![](https://cdn-images-1.medium.com/max/800/1*BdFV-bGWhQ5HiIL6VfY5xg.png)
 
+
 Before getting into the details, a couple of disclaimers are in order:
 1. Me and most of my coworkers have done front end over the years, but we’re all primarily back end developers. Particularly, the last time I worked on a Single-Page Application, Angular 1 was king; I vaguely knew about React ideas, but never came close to using it.
 2. Although we threw in a wizard and a fancy yearly calendar view, the application was your typical CRUD. Exactly the kind of thing for which [you usually don’t want to build a Single-Page application](https://medium.freecodecamp.org/why-i-hate-your-single-page-app-f08bb4ff9134). We knew this and we choose to do a SPA anyway because this wasn’t a paid project so we weren’t optimizing for resource efficiency but for learning.
