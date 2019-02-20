@@ -57,9 +57,11 @@ Also Elixir made it easy to “Walk” the code AST where we can check it for op
 It all boils down to two things: latency and state.
 
 **State**
+
 Games are very state-full, and if you had to send all the data needed to finish a REST-based transaction your JSON would be HUGE both upstream and downstream. Games also tend to react to events that the user did not generate so bi-directional communication is a very strong requirement. For example: If player 1 attacks player 2, player 2 will need to be notified of this event and different actions may be triggered if player 2 is online or not. Also, this state may need to be presented to other players, so in the last example player 3 may see that players 1 and 2 are in combat so he/she may jump in and help player 2.
 
 **Latency**
+
 For a typically ecommerce site a 500ms latency may be completely unnoticeable. However, in a game, 500 ms could be the difference between winning and losing. So we are constantly concerned with latency. This includes things like time spent serializing/deserializing your communications, how much data you are sending up and down the wire, how long you spent accessing the DB, etc, etc.
 
 **What are the main difference between implementing actual games and game development tools?**
