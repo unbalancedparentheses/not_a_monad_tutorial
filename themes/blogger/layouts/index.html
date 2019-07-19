@@ -1,0 +1,19 @@
+{{ partial "head.html" .}}
+<div class="hello">
+    <span>Hello, my name is </span><a href="">{{.Site.Author.name }}</a><span> and this is my personal blog. I hope you enjoy!</span>
+
+</div>
+<ul>
+{{range .Site.RegularPages}}
+    <li class="item_wrapper main">
+        <div class="date">{{ dateFormat "2006.01.02" .Date}}</div>
+        <div class="content">
+            <p class="title"><a href="{{ .Permalink}}">{{ .Title}}</a></p> 
+            <p class="summary">{{ .Summary}}</p>
+            <div class="tag_container">{{ partial "tags.html" .}}</div>
+        </div>      
+    </li>
+    {{ end }}
+</ul>
+{{ partial "footer.html" .}}
+

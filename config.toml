@@ -1,0 +1,16 @@
+baseURL = "https://catalinasy.github.io/not_a_monad_tutorial/"
+languageCode = "en-us"
+title = "This is not a Monad Tutorial"
+theme = "Blogger"
+
+[Author]
+    name = "unbalancedparentheses"
+    projects = ""
+    github = "https://github.com/unbalancedparentheses/"
+    twitter = "http://twitter.com/unbalancedparen/"
+    contact = "federico.carrone@lambdaclass.com"
+
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode}}{{ .}}{{ else }}en-US{{end}}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>{{ .Title }} - {{ .Site.Title}}</title>
+    {{ .Hugo.Generator }}
+</head>
+{{ partial "header.html" .}}
+<ul>
+{{ range .Data.Pages }}
+<li class="item_wrapper">
+        <div class="date">{{ dateFormat "2006.01.02" .Date}}</div>
+        <div class="title">
+            <p><a href="{{ .Permalink}}">{{ .Title}}</a></p>
+            <p class="details">
+                {{ partial "tags.html" .}}
+            </p>
+        </div>
+        
+</li>
+{{ end }}
+</ul>
+
+{{ partial "footer.html" .}}
+
